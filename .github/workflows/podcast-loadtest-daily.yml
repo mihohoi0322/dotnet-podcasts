@@ -26,7 +26,7 @@ jobs:
       - name: 'Azure Load Testing'
         uses: azure/load-testing@v1
         with:
-          loadTestConfigFile: 'Test/config.yml'
+          loadTestConfigFile: 'Test/config-daily.yml'
           loadTestResource: ${{ secrets.LOAD_TEST_RESOURCE }}
           resourceGroup: ${{ secrets.AZURE_RESOURCE_GROUP_NAME }}
           env: |
